@@ -1,0 +1,52 @@
+.toDoApp {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.taskInputContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.taskInputContainer input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.taskInputContainer button {
+  padding: 0.5rem 1rem;
+}
+
+.taskSections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.taskSection {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+}
+
+.taskItem button {
+  margin-left: 8px;
+}
+
+.taskItem.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
